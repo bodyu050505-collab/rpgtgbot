@@ -10,7 +10,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = Bot(BOT_TOKEN)
 dp = Dispatcher()
 
-import app.game as game_module
+import app.game.game as game_module
 game_module.bot = bot
 
 async def main():      # делаем бота
